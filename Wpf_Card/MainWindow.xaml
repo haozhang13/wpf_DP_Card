@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wpf_Card"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Card Dealer" Height="450" Width="800">
+    <Grid Name="contentGrid" MouseLeftButtonDown="ContentGrid_MouseLeftButtonDown"
+          MouseLeftButtonUp="ContentGrid_MouseLeftButtonUp"
+          MouseMove="ContentGrid_MouseMove">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.364,0.128" StartPoint="0.598,1.042">
+                <GradientStop Color="#FF0D4F1A" Offset="0"/>
+                <GradientStop Color="#FF448251" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
         
     </Grid>
 </Window>
